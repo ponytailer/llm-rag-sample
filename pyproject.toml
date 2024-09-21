@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "haystack-practice"
+version = "0.1.0"
+description = ""
+authors = ["ponytailer"]
+
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+haystack-ai = "*"
+ollama-haystack = "*"
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
