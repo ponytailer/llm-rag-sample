@@ -14,6 +14,7 @@ python = "^3.11"
 
 haystack-ai = "*"
 ollama-haystack = "*"
+ragas-haystack = "*"
 
 
 [build-system]
