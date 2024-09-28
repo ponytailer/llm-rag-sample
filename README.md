@@ -1,9 +1,28 @@
 # haystack-practice
-The haystack-ai practice repo.
+
+The llm rag sample repo.
 
 --------------------------
 
-1.[使用本地ollama组建简单的向量rag pipeline](https://github.com/ponytailer/haystack-practice/blob/main/simple_rag_pipeline)
-   - llama3
-   - nomic-embed-text
-   - memory-document-store
+### How to use ?
+
+#### 使用uv来管理依赖，不会用的可以看[安装教程](https://github.com/astral-sh/uv?tab=readme-ov-file#installation)
+
+然后 `uv sync` 安装项目所需依赖
+
+
+--------------------------
+
+### haystack
+
+1.[使用本地ollama组建简单的向量rag pipeline](https://github.com/ponytailer/llm-rag-sapmle/blob/main/haysatack_rag_pipeline)
+
+- llama3
+- nomic-embed-text
+- memory-document-store
+
+### langgraph
+
+### graph-rag
+
+### dspy
