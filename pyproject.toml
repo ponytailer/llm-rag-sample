@@ -5,11 +5,14 @@ description = "llm rag samples"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "dspy-ai>=2.5.0",
-    "haystack-ai>=2.5.1",
-    "langgraph>=0.2.28",
-    "ollama-haystack>=1.0.1",
-    "ragas-haystack>=1.0.1",
+    "dspy-ai==2.5.0",
+    "haystack-ai==2.5.1",
+    "langchain-ollama>=0.2.0",
+    "langgraph==0.2.28",
+    "langwatch>=0.1.29",
+    "ollama-haystack==1.0.1",
+    "ragas-haystack==1.0.1",
+    "toml>=0.10.2",
 ]
 
 [tool.uv]

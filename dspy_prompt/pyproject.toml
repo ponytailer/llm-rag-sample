@@ -1,0 +1,3 @@
+[langwatch.config]
+endpoint = "https://app.langwatch.ai"
+api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjE3Mjc0MjIwNjA2NDEsInJhbmQiOjAuNDk4NjI0ODIyNjgwODM4NSwiaWF0IjoxNzI3NDIyMDYwfQ.xE5Kl7LKx-AKYYFlB_JNJczfwmWH7EBfWWlo-MGLZ5A"
