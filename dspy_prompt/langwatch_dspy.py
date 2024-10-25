@@ -11,7 +11,7 @@ model_name = 'llama3'
 lm = dspy.OllamaLocal(model=model_name)
 
 colbertv2_wiki17_abstracts = dspy.ColBERTv2(
-        url='http://20.102.90.50:2017/wiki17_abstracts')
+    url='http://20.102.90.50:2017/wiki17_abstracts')
 
 dspy.settings.configure(lm=lm, rm=colbertv2_wiki17_abstracts)
 
@@ -43,17 +43,16 @@ def load_dataset():
     return [x.with_inputs('question') for x in dataset.train]
 
 
-def validate_context_and_answer(example, pred, trace=None):
-    answer_EM = evaluate.answer_exact_match(example, pred)
-    answer_PM = evaluate.answer_passage_match(example, pred)
-    return answer_EM and answer_PM
+def validate_context_and_answer(example, prediction, trace=None):
+    return evaluate.answer_exact_match(example, prediction) \
+        and evaluate.answer_passage_match(example, prediction)
 
 
 def load_toml() -> Dict[str, str]:
     with open('dspy_prompt/pyproject.toml', 'r') as f:
         data = toml.load(f)
         config = data.get("langwatch").get("config")
-    return configt
+    return config
 
 
 if __name__ == '__main__':
